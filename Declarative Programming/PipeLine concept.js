@@ -8,6 +8,18 @@ const subtractTen = x => x-10;
 console.log('Imparative, Three Successive Calls')
 for(let i=0;i<myData.length;i++) console.log(subtractTen(square(addOne(myData[i]))))
 
+// condition 1 : make step 3 if step one and step two return number < 20
+console.log('Imparative, Three Successive Calls with condition 1')
+let myDataIm = [];
+for(let i=0;i<myData.length;i++){ 
+        if(square(addOne(myData[i])) < 20){
+            myDataIm.push(subtractTen(square(addOne(myData[i]))))
+        }
+}
+for(let i=0;i<myDataIm.length;i++) console.log(myDataIm[i]);
+
+// ------------------------------------------------------------------------- //
+
 // Declartive
 console.log('Declarative, Three Successive Calls')
 let myData2 = myData.map(addOne).map(square).map(subtractTen); // New List After 3 calls
