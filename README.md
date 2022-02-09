@@ -1,7 +1,8 @@
 # Declarative-Programming
 Functional Programming with javaScript
+* src : https://www.youtube.com/playlist?list=PLpbZuj8hP-I6F-Zj1Ay8nQ1rMnmFnlK2f
 
-### JS array equivalents to C# LINQ methods
+### JS ways equivalents to C# LINQ methods
 1. Map == Select
 
 ```js
